@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ function checkNguyenAm(arr) {
+     let count = 0;
+     for (let i = 0; i < arr.length; i++) {
+         switch (arr[i]) {
+             case "a":
+             case "o":
+             case "e":
+             case 'u':
+             case 'i':
+                 count++;
+                 break;
+         }
+     }
+     if (count === 0) {
+         return false
+     } else {
+        alert("Trong chuỗi có " + count + " Nguyên Âm")
+     }
+ }
+ let arr = prompt();
+ checkNguyenAm(arr)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [1,2,3,4,5,6,7,8,9];
+    function checkIndex(number , array) {
+        for (let i = 0; i < array.length; i++) {
+            if (number === array[i]){
+                alert("Số " + number + " có nằm trong mảng và ở vị trí thứ " + array[i] + " Trong mảng")
+            }
+        }
+    }
+
+    let number = +prompt()
+    checkIndex(number, array)
+
+
+
+</script>
+</body>
+</html>
